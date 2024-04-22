@@ -10,6 +10,14 @@ const pool = require("./db/pooldb")
 require('dotenv').config();
 
 
+const pool = new Pool({
+  user: 'postgres',
+  host: 'localhost',
+  database: 'my_new_database',
+  password: 'ayush',
+  port: 5432,
+});
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
